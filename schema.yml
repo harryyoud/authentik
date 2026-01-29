@@ -42083,6 +42083,10 @@ components:
           type: array
           items:
             type: integer
+        allowed_provider_tokens:
+          type: array
+          items:
+            type: integer
       required:
       - assigned_application_name
       - assigned_application_slug
@@ -42206,6 +42210,10 @@ components:
               authenticate.
           title: Any JWT signed by the JWK of the selected source can be used to authenticate.
         jwt_federation_providers:
+          type: array
+          items:
+            type: integer
+        allowed_provider_tokens:
           type: array
           items:
             type: integer
@@ -47524,6 +47532,10 @@ components:
               authenticate.
           title: Any JWT signed by the JWK of the selected source can be used to authenticate.
         jwt_federation_providers:
+          type: array
+          items:
+            type: integer
+        allowed_provider_tokens:
           type: array
           items:
             type: integer
